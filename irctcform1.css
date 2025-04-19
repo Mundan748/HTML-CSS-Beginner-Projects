@@ -1,0 +1,103 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+.form_cont{
+    width: 600px;
+    min-height: 500px;
+    max-height: fit-content;
+    background-color: azure;
+    /* margin-left: 0; */
+}
+.form_cont>div{
+    display: inline-block;
+    margin: 5px;
+    width: 285px;
+    height: 40px;
+    background-color: #213d77;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40px;
+}
+.logo{
+    padding-top: 5px;
+    align-items: end;
+    padding-left: 10px;
+}
+ .form_cont img{
+    width: 20px;
+    height: 30px;
+    background-color: white;
+ }
+.form_cont a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+}
+.form_cont h1{
+    text-align: center;
+    font-size: 30px;
+    margin: 30px;
+}
+.form_cont p{
+    display: inline;
+    margin-left: 5px;
+}
+.form_cont ul{
+    list-style-type: none;
+    width: 100%;
+    margin-left: 20px;
+}
+.form_cont li{
+    margin: 30px 0;
+    width: 554px;
+}
+.form_cont li:nth-child(2){
+    margin: -25px 0;
+}
+ .form_cont li:nth-child(2) button{
+    width: 30px; height: 30px;
+    border-radius: 100%; border: none;
+    background-color: #dff1ff;
+    margin-left: 153px;
+ }
+ .form_cont li input[type="text"],.form_cont li input[type="date"],.form_cont select{
+    border: none;
+    width: 275px; height: 40px;
+}
+ .form_cont li div{
+    display: inline-block;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 320px; height: 42px;
+}
+.form_cont li div:nth-child(2){
+    width: 210px;
+    margin-left: 20px;
+}
+.form_cont li div:nth-child(2) input[type="date"],.form_cont li div:nth-child(2) select {
+    width: 165px;
+}
+.form_cont li:last-child button{
+    width: 100px; height: 40px;
+    border-radius: 5px;
+    background-color: #fb792b;
+    color: white;
+    border: none;
+ }
+ .form_cont li:last-child button:last-child{
+    width: 200px;
+    margin-left: 250px;
+ }
+ .form_cont span{
+    height: 40px; width: 40px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+ }
+

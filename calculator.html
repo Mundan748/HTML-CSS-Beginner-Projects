@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CACULATOR</title>
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/018/972/682/non_2x/calculator-3d-application-icon-png.png"
+        type="image/x-icon">
+</head>
+
+<body>
+    <form name="myform">
+        <table align="center" border="5" bgcolor="black">
+            <tr>
+                <td colspan="4"><input type="text" name="mytext" placeholder="00" disabled></td>
+            </tr>
+            <tr align="center">
+                <td><input type="button" value="1" onclick="myform.mytext.value+='1'"></td>
+                <td><input type="button" value="2" onclick="myform.mytext.value+='2'"></td>
+                <td><input type="button" value="3" onclick="myform.mytext.value+='3'"></td>
+                <td><input type="button" value="+" onclick="myform.mytext.value+='+'"></td>
+            </tr>
+            <tr align="center">
+                <td><input type="button" value="4" onclick="myform.mytext.value+='4'"></td>
+                <td><input type="button" value="5" onclick="myform.mytext.value+='5'"></td>
+                <td><input type="button" value="6" onclick="myform.mytext.value+='6'"></td>
+                <td><input type="button" value="-" onclick="myform.mytext.value+='-'"></td>
+            </tr>
+            <tr align="center">
+                <td><input type="button" value="7" onclick="myform.mytext.value+='7'"></td>
+                <td><input type="button" value="8" onclick="myform.mytext.value+='8'"></td>
+                <td><input type="button" value="9" onclick="myform.mytext.value+='9'"></td>
+                <td><input type="button" value="/" onclick="myform.mytext.value+='/'"></td>
+            </tr>
+            <tr align="center">
+                <td><input type="reset" value="c"></td>
+                <td><input type="button" value="0" onclick="myform.mytext.value+='0'"></td>
+                <td><input type="button" value="=" onclick="myform.mytext.value=eval(myform.mytext.value)"></td>
+                <td><input type="button" value="*" onclick="myform.mytext.value+='*'"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

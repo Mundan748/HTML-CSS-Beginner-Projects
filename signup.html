@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP PAGE</title>
+    <style>
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        .ip {
+            background-color: #222536;
+            color: yellow;
+        }
+        .ip tr td label{
+            padding-right: 10px;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: green;
+            color: white;
+            height: 30px; width: 80px;
+            border: none;
+        }
+         input[type="reset"]{
+            background-color: red;
+            margin-right: 5px;
+        }
+        div{
+            width: fit-content;
+            border: 5px solid white;
+            margin-top: 50px;
+            padding: 10px;
+        }
+        thead{
+            color: yellow;
+            height: 40px;
+        }
+        tfoot{
+            height: 50px;
+        }
+        tbody{
+            height: 350px;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <table cellspacing="0" >
+                <thead>
+                    <tr bgcolor="#de8703">
+                        <td colspan="2">Sign Up</td>
+                    </tr>
+                </thead>
+                <tbody class="ip">
+
+                    <tr>
+                        <td align="right"><label>First Name</label></td>
+                        <td><input type="text" placeholder="Enter First Name"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Last Name</label></td>
+                        <td><input type="text" placeholder="Enter Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Date of Birth</label></td>
+                        <td><input type="date"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Gender</label></td>
+                        <td>
+                            <input type="radio" name="gen">Male
+                            <input type="radio" name="gen">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Country</label></td>
+                        <td>
+                            <select>
+                                <option disabled>Country</option>
+                                <option>India</option>
+                                <option>Pakistan</option>
+                                <option>Nepal</option>
+                                <option>Bhutan</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>E-mail</label></td>
+                        <td><input type="email" placeholder="Enter E-mail"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Phone</label></td>
+                        <td><input type="tel" placeholder="Enter Phone"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Password</label></td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><label>Confirm Password</label></td>
+                        <td><input type="password"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox">I Agree to the Terms of use
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr bgcolor="#de8703">
+                        <td colspan="2" align="right">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Cancel">
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

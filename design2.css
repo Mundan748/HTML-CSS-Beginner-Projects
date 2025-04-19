@@ -1,0 +1,113 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.common {
+    width: 100%;
+    min-height: 50px;
+    max-height: fit-content;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    background-color: #e6e6e6;
+}
+
+.common>section {
+    /* border: 1px solid #0000ff; */
+    padding: 10px;
+    flex: 1;
+    /* align-items: center; */
+}
+
+.nav,.footer {
+    background-color: #ff7101;
+    color: white;
+    text-align: center;
+}
+
+.nav a,.footer a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    width: 60px;
+    height: 30px;
+}
+
+.nav a:hover,.footer a:hover {
+    background-color: gray;
+}
+
+.nav section:nth-child(2)>ul,
+.footer section:nth-child(2)>ul,
+.nav section:last-child>ul,
+.footer section:first-child>ul {
+    list-style-type: none;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.first {
+    /* background-color: #27bec5; */
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.first>section{
+    width: 400%;
+    animation: slide 8s  infinite  alternate ease-in-out;
+    position: relative;
+}
+.first img{
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+.second {
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #e6e6e6;
+}
+
+.second>section {
+    margin: 10px;
+    background-color: #f2f2f1;
+    display: flex;
+    flex-direction: column;
+}
+
+.second h3 {
+    color: blue;
+}
+
+.second img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+.second button {
+    width: 100px;
+    margin-top: 5px;
+    height: 30px;
+    border: 0;
+    background-color: #29bbc8;
+    color: white;
+}
+
+.footer p {
+    float: right;
+    font-size: 14px;
+    margin-right: 100px;
+}
+
+@keyframes slide{
+    0%{left: 0%}
+    25%{left: 0%}
+    30%{left: -100%}
+    50%{left: -100%}
+    55%{left: -200%}
+    75%{left: -200%}
+    80%{left: -300%}
+    100%{left: -300%}
+}
